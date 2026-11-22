@@ -1,0 +1,22 @@
+{
+  "$schema": "https://raw.githubusercontent.com/stablyai/orca/main/docs/schemas/plugins/orca-catalog.v2.schema.json",
+  "catalogVersion": 2,
+  "name": "딸기 단어장 플러그인",
+  "owner": "dalgicake",
+  "plugins": [{
+    "id": "dalgicake.ddalgiword",
+    "ownerId": 239370873,
+    "description": "단어장을 검토하고 딸기 단어장 계정에 전송합니다.",
+    "source": { "kind": "git", "url": "https://github.com/dalgicake/da_ddalgiword_plugins.git", "ref": "main" },
+    "releases": [{
+      "version": "1.0.0",
+      "commit": "783f6fdec917cdf079b140dafa58e819d9126785",
+      "contentHash": "d5e139c14c9fd2ebcbff236efe127074602ffee32c1a0396afebe14e1340edf4",
+      "execution": "trusted-worker",
+      "minimumOrca": "1.4.246",
+      "name": "딸기 단어장",
+      "contributes": [{ "kind": "panels", "name": "딸기 단어장" }],
+      "capabilities": ["secrets:own"]
+    }]
+  }]
+}
