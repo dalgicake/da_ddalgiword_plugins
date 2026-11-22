@@ -1,0 +1,14 @@
+{
+  "manifestVersion": 2,
+  "id": "ddalgiword",
+  "name": "딸기 단어장",
+  "version": "1.0.0",
+  "description": "단어장을 검토하고 딸기 단어장 계정에 전송합니다.",
+  "homepage": "https://ddalgiword.com/plugins",
+  "engines": { "orca": ">=1.4.246" },
+  "execution": "trusted-worker",
+  "pluginApi": 1,
+  "main": "src/worker.ts",
+  "contributes": { "panels": [{ "id": "ddalgiword", "title": "딸기 단어장", "icon": "book", "entry": "src/panel.tsx", "ui": "components" }] },
+  "capabilities": [{ "kind": "secrets:own" }]
+}
